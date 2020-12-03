@@ -1,0 +1,112 @@
+/* CSS files add styling rules to your content */
+
+@font-face
+{
+  font-family: 'MinecraftiaRegular';
+  src: url(https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FMinecraftia.ttf?v=1606084243082);
+  font-weight: bold;
+}
+
+body {
+  font-family: 'MinecraftiaRegular', helvetica, arial, sans-serif;
+  background: url(https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FllrXrHX.png?v=1605931339808) ;
+  background-color: grey;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+header{
+  font-family: 'MinecraftiaRegular';
+  background: url(https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2Fdirtblock.png?v=1605743359915);
+  background-size: 20%;
+  margin: 0 auto;
+  padding: 30px;
+  width: 100%;
+}
+
+p {
+  padding: 20px;
+  width: 40%;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 1%;
+  font-style: bold;
+  color: #ff0037;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1%;
+  font-style: italic;
+  color: #33ccff;
+}
+
+h3
+{
+  font-size: 2em;
+  padding: 25px 50px 10px;
+  color: white;
+  text-align: center;
+}
+
+/* navigation bar and styling */
+nav {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  overflow: hidden;
+  background: black;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/*used to center elements, for example tables used for items, blocks, etc.*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* used for index page intro description*/
+#container-background {
+  text-align: center;
+  background-image: url('https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2F3611929_minecraft-grass-block-minecraft-wood-plank-texture-hd.png?v=1605932879162');
+  background-repeat: no-repeat;
+  background-size: fixed;
+}
+
+/*used for navigation decoration, coloring and spacing*/
+.navstyle{
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 30px;
+  background: #00802b;
+}
+
+.navstyle2{
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  background: #3399ff;
+}
+
+/* for item/block images*/
+td img { 
+  border: 3px;
+  height: 100px;
+  width: 100px;
+}
+
+table caption h3
+{
+  color: white;
+  text-align: left;
+
+}
+
+/* overrides the stone background image*/
+body a-scene {
+   background: #6495ED;
+}

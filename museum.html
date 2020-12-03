@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    
+    <!-- import the webpage's javascript file -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!--donmccurdy aframe-extras for animation -->  
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="script.js" async></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+  </head>  
+  <body>
+
+      <!--check to see if there a way to change camera position -->
+    
+  <a-scene physics="gravity: -75">
+      <a-assets>
+        <!--<a-asset-item id="MCmodel" src="MCworldtest/scene.glb"></a-asset-item>-->
+        <a-asset-item id="MCmodel-obj" src="ObjFile/world.obj"></a-asset-item>
+        <a-asset-item id="MCmodel-mtl" src="ObjFile/world.mtl"></a-asset-item>
+        <a-asset-item id="Steve" src="animatedsteve/scene.gltf"></a-asset-item>
+        <a-asset-item id="IdleSteve" src="Idlesteve/scene.gltf"></a-asset-item>
+        <!-- <a-asset-item id="MusicBackground" src="Music/calm1.mp3"></a-asset-item> --> 
+        <!--<audio id="MinecraftBackgroundMusic" src="Music/calm1.mp3" preload="auto"></audio>-->
+          <audio id="Music" src="Music/calm1.mp3"></audio>
+      </a-assets>
+      
+       <!--<a-entity gltf-model="#MCmodel"></a-entity>-->
+      
+      <a-obj-model src="#MCmodel-obj" mtl="#MCmodel-mtl"></a-obj-model>
+      
+      <a-entity gltf-model="#IdleSteve" position="143.5 20.5 45" scale="0.1 0.1 0.1"></a-entity>
+      
+      <!--minecraft music-->
+       <a-entity sound="src: #Music; autoplay:true; loop: true; positional: false"></a-entity>
+      
+      
+      <!--https://aframe.io/docs/1.0.0/components/camera.html -->
+      <!--camera speed and position--> <!--acceleration good at 250 position 8 14 27-->
+      <a-entity id="cam1" camera="active: true" camera look-controls wasd-controls="acceleration:250" position="87 12 37"  kinematic-body>
+      </a-entity>
+      
+       <!--box so camera doesnt clip through floor -->
+      <!--floor-->
+      <a-box id="floor1" color="black" position="115 13 19" visible="false" width="90" height="1" depth="100"  static-body></a-box>
+      <a-box id="floor1front1" color="black" position="65 13 8" visible="false" width="15" height="1" depth="43"  static-body></a-box>
+      <a-box id="floor1front2" color="black" position="53 13 8" visible="false" width="15" height="1" depth="15"  static-body></a-box>
+      <a-box id="floor2" color="black" position="6 21 19" visible="false" width="1000" depth="1000" static-body></a-box>
+      <a-box id="floor" color="black" position="6 4w 19" visible="false" width="1000"  depth="1000" static-body></a-box>
+      
+      <!--right wall-->
+      <a-box id="Rwall" color="black" position="115 10 47" visible="false" width="80" height="100" depth="1"  static-body></a-box>
+      <a-box id="Rwall" color="black" position="115 10 45" visible="false" width="37" height="100" depth="1"  static-body></a-box>
+      <!--left wall-->
+      <a-box id="Lwall" color="black" position="115 10 -30" visible="false" width="80" height="100" depth="1"  static-body></a-box>
+      <!--front wall-->
+      <a-box id="Frontdoor" color="black" position="70 12 10" visible="false" width="10" height="10" depth="1" rotation="0 90 0" static-body></a-box>
+      <!--left-->
+      <a-box id="FrontTopSymbol" color="black" position="70 22 10" visible="false" width="10" height="10" depth="1" rotation="0 90 0" static-body></a-box>
+      <!--left-->
+      <a-box id="FrontLwallWindow" color="black" position="76 10 -20" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="FrontLwallDoor" color="black" position="70 10 -3" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="FrontLwall" color="black" position="73 10 -12" visible="false" width="7" height="100" depth="1"   static-body></a-box>
+      <!--right-->
+      <a-box id="FrontRwallWindow" color="black" position="76 10 38" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="FrontRwallDoor" color="black" position="70 10 20" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="FrontRwall" color="black" position="73 10 29" visible="false" width="7" height="100" depth="1"   static-body></a-box>
+      <!--back wall -->
+      <a-box id="BackLwallWindow" color="black" position="152.5 10 -20" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="BackLwallHwindow" color="black" position="159 10 8.5" visible="false" width="41" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="BackLwall" color="black" position="155.5 10 -12" visible="false" width="7" height="100" depth="1"   static-body></a-box>
+      <a-box id="BackRwallWindow" color="black" position="152.5 10 38" visible="false" width="18" height="100" depth="1" rotation="0 90 0"  static-body></a-box>
+      <a-box id="BackLwall" color="black" position="155.5 10 28.6" visible="false" width="7" height="100" depth="1"   static-body></a-box>
+      
+      <!--elevator-->
+      <a-box id="F1RelevatorWall" id="elevator" color="black" position="154 10 16.5" visible="false" width="8" height="100" depth="1"   static-body></a-box>
+      <a-box id="F1LelevatorWall" id="elevator" color="black" position="154 10 0.5" visible="false" width="8" height="100" depth="1"   static-body></a-box>
+      <a-box id="F1FrontelevatorWall" color="black" position="150.5 10 8.5" visible="false" width="16" height="18" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 145 20 8.8" static-body></a-box>
+      <a-box id="F2FrontelevatorWall" color="black" position="150.5 21 8.5" visible="false" width="16" height="8" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 145 10 8.8" static-body></a-box>
+      <!--stairs-->
+      <a-box id="LFrontStair" color="black" position="50 4 -7" visible="false" width="7" height="1" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 56 12 5" static-body></a-box>
+      <a-box id="RFrontStair" color="black" position="50 4 24" visible="false" width="7" height="1" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 56 12 12" static-body></a-box>
+      
+      <a-entity 
+                  gltf-model="#Steve"   
+                    position="87 13 38"
+                    scale="0.003 0.003 0.003"
+                    src="#Steve"
+                    animation-mixer="clip: Armature.001|Walk"  
+                    rotation="0 90 0"
+                    animation="property: position; to: 144 13 38; dur: 10000; easing: linear; loop: false"
+                    animation__2="property: position;from:144 13 38; to: 144 13 12; dur: 9000; easing: linear; loop: false; delay:14200" 
+                    animation__3="property: rotation; to: 0 180 0; easing: linear; loop: false;delay: 14200; visible: false" 
+                    animation__4="property: position; from: 144 13 12; to: 155 13 12 ;dur: 4000; easing: linear; loop:false; delay:23500"
+                    animation__5="property: rotation; to: 0 90 0; easing: linear; loop:false; delay:23500"
+                    animation__6="property: position; from: 155 13 12; to: 2000 13 12 ; easing: linear; loop:false; delay:25900"
+                  >
+                </a-entity>
+       
+        </a-scene>
+  </body>
+</html>
