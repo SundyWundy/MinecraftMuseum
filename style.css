@@ -12,21 +12,22 @@ body {
   background: url(https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FllrXrHX.png?v=1605931339808) ;
   background-color: grey;
   padding: 0 auto;
-  margin: 0 auto;
+  margin: auto;
+  text-align: center;
 }
 
 header{
   font-family: 'MinecraftiaRegular';
   background: url(https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2Fdirtblock.png?v=1605743359915);
-  background-size: 20%;
+  background-size: cover;
   margin: 0 auto;
   padding: 30px;
   width: 100%;
 }
 
 p {
-  padding: 20px;
-  width: 40%;
+  text-align: center;
+  width: 100%;
 }
 
 h1 {
@@ -55,7 +56,7 @@ h3
 nav {
   margin: 0;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   overflow: hidden;
   background: black;
   margin-bottom: 5px;
@@ -70,11 +71,14 @@ nav {
 }
 
 /* used for index page intro description*/
-#container-background {
+.container-background {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   text-align: center;
   background-image: url('https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2F3611929_minecraft-grass-block-minecraft-wood-plank-texture-hd.png?v=1605932879162');
-  background-repeat: no-repeat;
-  background-size: fixed;
+  width: 60%;
 }
 
 /*used for navigation decoration, coloring and spacing*/
@@ -85,6 +89,13 @@ nav {
   background: #00802b;
 }
 
+.navstyleSelected{
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 30px;
+  background: #00ff56;
+}
+
 .navstyle2{
   text-decoration: none;
   color: black;
@@ -92,11 +103,22 @@ nav {
   background: #3399ff;
 }
 
+.navstyle:hover {
+  background: red;
+}
+
 /* for item/block images*/
 td img { 
   border: 3px;
   height: 100px;
   width: 100px;
+}
+
+/* specifically for the shield item */
+#shield {
+  border: 3px;
+  height: 100px;
+  width: 53px;
 }
 
 table caption h3
@@ -110,3 +132,14 @@ table caption h3
 body a-scene {
    background: #6495ED;
 }
+
+
+.sign2
+{
+  text-align: right;
+  margin-right: 50px;
+  background-image: url('https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2F3611929_minecraft-grass-block-minecraft-wood-plank-texture-hd.png?v=1605932879162');
+  background-repeat: no-repeat;
+  position: relative;
+}
+
