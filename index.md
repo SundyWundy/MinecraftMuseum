@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -25,17 +25,23 @@
     </header>
         <!-- Navigation bar -->
     <nav>
-      <a class="navstyle" href="index.html">Home</a>
+      <a class="navstyleSelected" href="index.html">Home</a>
       <a class="navstyle" href="items.html">Items</a>
       <a class="navstyle" href="blocks.html">Blocks</a>
       <a class="navstyle" href="mobs.html">Mobs</a>
       <a class="navstyle2" href="museum.html" target="_blank">Interactive Museum</a>
     </nav>
     <br>
-    <div id="container-background">
+    <div class="container-background">
       <p> 
-        Welcome to the minecraft museum! In this website we have information on all things minecraft. Learn about you favorite mobs, items, blocks, and more! 
+        Welcome to the Minecraft Museum! In this website we have information on all things Minecraft. Learn about you favorite mobs, items, blocks, and more! 
         Make sure to stop by and visit our interactive museum where you will be able to experience a virtual walkthrough of our handcrafted musuem.
+      </p>
+     
+    </div>
+    <div class="container-background">
+     <p id="sign2">
+        Click the above links to get started!
       </p>
     </div>
   </body>
