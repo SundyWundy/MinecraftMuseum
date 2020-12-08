@@ -10,7 +10,7 @@
     <link rel="icon" href="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2Fminecraft%20museum%20site%20icon.png?v=1606086948875"/> <!--site icon-->
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->  
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -25,10 +25,163 @@
         <!-- Navigation bar -->
     <nav>
       <a class="navstyle" href="index.html">Home</a>
-      <a class="navstyle" href="items.html">Items</a>
+      <a class="navstyleSelected" href="items.html">Items</a>
       <a class="navstyle" href="blocks.html">Blocks</a>
       <a class="navstyle" href="mobs.html">Mobs</a>
       <a class="navstyle2" href="museum.html" target="_blank">Interactive Museum</a>
     </nav>
+    
+    <h3 id="named" padding="20">Minecraft Museum Items Catalog</h3>
+    
+    <table class="center" border="3" cellspacing="3" cellpadding="9" bordercolor="blue" bgcolor="#8099ff" font-color="white" summary="List of Ore Blocks found in minecraft including their textures name and a description.">
+      <caption>
+        <h3 id="toolsTable">Tools</h3>
+      </caption>
+      <!-- quick link: https://minecraft.gamepedia.com/Item -->
+      <thead>
+        <tr>
+          <!-- Beginning of table header for items  -->
+          <th scope="col">Item Name</th>
+          <th scope="col">Item Texture</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+    
+    <!-- start of table body, contains all main information of items including a picture of the textures, a description, and name of item -->
+     
+      <tbody bgcolor="beige">
+        <tr>
+          <th scope="row"> Pickaxe </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FPickaxeNew.gif?v=1607131467901" alt="pickaxe" > </td>
+          <td scope="row"> Pickaxes are one of the most commonly used tools in the game, being required to mine all ores, rock, rock-based blocks and metal-based blocks. They allow the player to mine blocks at faster speeds, and the speed increases depending on the material it is made out of. </td>
+        </tr>        
+        <tr>
+          <th scope="row"> Axe </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FAxesNew.gif?v=1607130776363" alt="axe" > </td>
+          <td scope="row"> An axe is a tool used to hasten the collection of wood-based items. It is also used as a weapon for melee attacks. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Sword </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FSwordsNew.gif?v=1607131335699" alt="sword"> </td>
+          <td scope="row"> A sword is a melee weapon, that is mainly used to deal damage to mobs and/or players. Swords are also useful for mining cobwebs and bamboo. A sword is made from one of six materials, in order of increasing quality and expense: wood, stone, gold, iron, diamond, and netherite. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Shovel </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FShovelsNew.gif?v=1607131714443" alt="shovel"> </td>
+          <td scope="row"> Shovels are tools used to ease the process of collecting dirt and other blocks. </td>
+        </tr>        
+        <tr>
+          <th scope="row"> Hoe </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FHoesNew.gif?v=1607131777283" alt="hoe"> </td>
+          <td scope="row"> Hoes are tools used to till dirt and grass blocks into farmland, as well as quickly harvest certain blocks. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Map </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FMapNew.png?v=1607133900349" alt="map"> </td>
+          <td scope="row"> A map is an item used to view explored terrain and mark landmarks. </td>
+        </tr>     
+        <tr>
+          <th scope="row"> Flint and Steel </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FFlint_and_Steel_JE4_BE2.png?v=1607134144601" alt="flint and steel"> </td>
+          <td scope="row"> A flint and steel is a tool used to light fires. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Shears </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FShears_JE2_BE2.png?v=1607133042361" alt="shears" > </td>
+          <td scope="row"> Shears are a tool used primarily to shear sheep to get wool and mine a few types of blocks. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Shield </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FShield_JE2_BE1.png?v=1607133189811" alt="shield" id="shield"> </td>
+          <td scope="row"> A shield is a tool used for protecting the player against attacks. </td>
+        </tr>     
+        <tr>
+          <th scope="row"> Compass </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FCompass_JE2_BE1.gif?v=1607133629674" alt="compass"> </td>
+          <td scope="row"> Compasses are an item used to point to the world spawn. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Bow </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FBow.gif?v=1607133826422" alt="bow"> </td>
+          <td scope="row"> A bow is a ranged weapon that fires arrows. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Bucket </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FBucket_JE2_BE2.png?v=1607134069692" alt="bucket" > </td>
+          <td scope="row"> Buckets are tools used to carry water, lava, milk, and fish (cod, pufferfish, salmon, and tropical fish only.) </td>
+        </tr>
+        <tr>
+          <th scope="row"> Fishing Rod </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FFishing_Rod_JE2_BE2.png?v=1607134286927" alt="fishing rod"> </td>
+          <td scope="row"> A fishing rod is a tool used primarily for fishing. </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table class="center" border="3" cellspacing="3" cellpadding="9" bordercolor="blue" bgcolor="#8099ff" font-color="white" summary="List of Ore Blocks found in minecraft including their textures name and a description.">
+      <caption>
+        <h3 id="mineralsAndIngotsTable">Minerals and Ingots</h3>
+      </caption>
+      <!-- quick link: https://minecraft.gamepedia.com/Item -->
+      <thead>
+        <tr>
+          <!-- Beginning of table header for items used in first floor of museum -->
+          <th scope="col">Item Name</th>
+          <th scope="col">Item Texture</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+    
+    <!-- start of table body, contains all main information of items including a picture of the textures, a description, and name of item -->
+     
+      <tbody bgcolor="beige">
+        <tr>
+          <th scope="row"> Coal </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FCoal_JE4_BE3.png?v=1607135154739" alt="coal" > </td>
+          <td scope="row"> Coal is an item mainly obtained by harvesting coal ore blocks. It is used as fuel, for crafting torches and campfires, or for trading with villagers. </td>
+        </tr>        
+        <tr>
+          <th scope="row"> Iron Ingot </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FIron_Ingot_JE3_BE2.png?v=1607136415694" alt="iron ingot" > </td>
+          <td scope="row"> Iron ingots are versatile metal ingots used extensively in crafting. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Lapis Lazuli </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FLapis_Lazuli_JE2_BE2.png?v=1607136419121" alt="lapis lazuli"> </td>
+          <td scope="row"> Lapis lazuli is a mineral used for enchanting and decoration. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Redstone Dust </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FRedstone_Dust_JE2_BE2.png?v=1607136424258" alt="redstone"> </td>
+          <td scope="row"> Redstone dust is a mineral that can transmit redstone power when placed as a block. </td>
+        </tr>        
+        <tr>
+          <th scope="row"> Gold Ingot </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FGold_Ingot_JE4_BE2.png?v=1607136427269" alt="gold ingot"> </td>
+          <td scope="row"> Gold ingots are metal ingots used to craft various items and used as currency for bartering with piglins. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Diamond </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FDiamond_JE3_BE3.png?v=1607134930965" alt="diamond"> </td>
+          <td scope="row"> A diamond is a rare mineral obtained from diamond ore or loot chests. They are mainly used to craft high-tier tools and armor, enchanting tables, blocks of diamond, and jukeboxes. </td>
+        </tr>     
+        <tr>
+          <th scope="row"> Emerald </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FEmerald_JE3_BE3.png?v=1607136431459" alt="emerald"> </td>
+          <td scope="row"> Emeralds are rare minerals, and are used to trade with villagers or to power beacons. They are obtained from emerald ore, one of the rarest ores in Minecraft. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Nether Quartz </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FNether_Quartz_JE2_BE2.png?v=1607136435351" alt="nether quartz" > </td>
+          <td scope="row"> Nether quartz is a smooth, white mineral found in the Nether. </td>
+        </tr>
+        <tr>
+          <th scope="row"> Netherite Scrap </th>
+          <td scope="row"> <img src="https://cdn.glitch.com/047f709c-3cd0-4a03-bc01-44b832860381%2FNetherite_Scrap_JE2_BE1.png?v=1607136439304" alt="netherite scrap"> </td>
+          <td scope="row"> Netherite scrap is a material smelted from ancient debris, which is found in the Nether. Its sole use is for crafting netherite ingots. Like most netherite-related items, it does not burn in fire or lava. </td>
+        </tr>
+      </tbody>
+    </table>
+    
   </body>
 </html>
