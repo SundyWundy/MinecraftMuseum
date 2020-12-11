@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Hello!</title>
+    <title>Minecraft Museum</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
@@ -10,25 +10,22 @@
     
     <!-- import the webpage's javascript file -->
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!--donmccurdy aframe-extras for animation -->  
+    <!--donmccurdy aframe-extras -->  
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="script.js" async></script>
+    <!--aframe-event-set-component -->
     <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+      <!--aframe physics -->
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
   </head>  
   <body>
-
-      <!--check to see if there a way to change camera position -->
     
   <a-scene physics="gravity: -75">
       <a-assets>
-        <!--<a-asset-item id="MCmodel" src="MCworldtest/scene.glb"></a-asset-item>-->
         <a-asset-item id="MCmodel-obj" src="ObjFile/world.obj"></a-asset-item>
         <a-asset-item id="MCmodel-mtl" src="ObjFile/world.mtl"></a-asset-item>
         <a-asset-item id="Steve" src="animatedsteve/scene.gltf"></a-asset-item>
         <a-asset-item id="IdleSteve" src="Idlesteve/scene.gltf"></a-asset-item>
-        <!-- <a-asset-item id="MusicBackground" src="Music/calm1.mp3"></a-asset-item> --> 
-        <!--<audio id="MinecraftBackgroundMusic" src="Music/calm1.mp3" preload="auto"></audio>-->
           <audio id="Music" src="Music/calm1.mp3"></audio>
       </a-assets>
       
@@ -43,11 +40,11 @@
       
       
       <!--https://aframe.io/docs/1.0.0/components/camera.html -->
-      <!--camera speed and position--> <!--acceleration good at 250 position 8 14 27-->
-      <a-entity id="cam1" camera="active: true" camera look-controls wasd-controls="acceleration:250" position="87 12 37"  kinematic-body>
+      <!--camera speed and position--> 
+      <a-entity id="cam1" camera look-controls wasd-controls="acceleration:250" position="87 12 37"  kinematic-body>
       </a-entity>
       
-       <!--box so camera doesnt clip through floor -->
+      <!--box so camera doesnt clip through floor -->
       <!--floor-->
       <a-box id="floor1" color="black" position="115 13 19" visible="false" width="90" height="1" depth="100"  static-body></a-box>
       <a-box id="floor1front1" color="black" position="65 13 8" visible="false" width="15" height="1" depth="43"  static-body></a-box>
