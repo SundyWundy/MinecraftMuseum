@@ -85,6 +85,7 @@
       <a-box id="LFrontStair" color="black" position="50 4 -7" visible="false" width="7" height="1" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 56 12 5" static-body></a-box>
       <a-box id="RFrontStair" color="black" position="50 4 24" visible="false" width="7" height="1" depth="1"   rotation="0 90 0" event-set__click="_event: collide;_target: #cam1; position: 56 12 12" static-body></a-box>
       
+      <!--https://aframe.io/docs/1.0.0/components/animation.html-->
       <a-entity 
                   gltf-model="#Steve"   
                     position="87 13 38"
@@ -92,12 +93,12 @@
                     src="#Steve"
                     animation-mixer="clip: Armature.001|Walk"  
                     rotation="0 90 0"
-                    animation="property: position; to: 144 13 38; dur: 10000; easing: linear; loop: false"
-                    animation__2="property: position;from:144 13 38; to: 144 13 12; dur: 9000; easing: linear; loop: false; delay:14200" 
-                    animation__3="property: rotation; to: 0 180 0; easing: linear; loop: false;delay: 14200; visible: false" 
-                    animation__4="property: position; from: 144 13 12; to: 155 13 12 ;dur: 4000; easing: linear; loop:false; delay:23500"
-                    animation__5="property: rotation; to: 0 90 0; easing: linear; loop:false; delay:23500"
-                    animation__6="property: position; from: 155 13 12; to: 2000 13 12 ; easing: linear; loop:false; delay:25900"
+                    animation="property: position; to: 144 13 38; dur: 10000;  loop: false"
+                    animation__2="property: position;from:144 13 38; to: 144 13 12; dur: 9000; loop: false; delay:14200" 
+                    animation__3="property: rotation; to: 0 180 0; loop: false;delay: 14200; visible: false" 
+                    animation__4="property: position; from: 144 13 12; to: 155 13 12 ;dur: 4000; loop:false; delay:23500"
+                    animation__5="property: rotation; to: 0 90 0; loop:false; delay:23500"
+                    animation__6="property: position; from: 155 13 12; to: 2000 13 12 ; loop:false; delay:25900"
                   >
                 </a-entity>
        
