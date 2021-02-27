@@ -1,3 +1,3 @@
 # MinecraftMuseum
 
- A website showing the Minecraft blocks, 
+ A website showing the Minecraft blocks, mobs, items, and a experience
